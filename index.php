@@ -18,7 +18,6 @@
 <!-- create a form to send message -->
 <form onsubmit="return sendMessage();">
     <input id="message" placeholder="Enter message" autocomplete="off">
- 
     <input type="submit">
 </form>
      

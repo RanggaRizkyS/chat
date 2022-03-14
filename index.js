@@ -1,11 +1,11 @@
 var firebaseConfig = {
-  apiKey: process.env.apiKey,
-  authDomain: process.env.authDomain,
-  databaseURL: process.env.databaseURL,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
+  apiKey: "AIzaSyBAVPRW-454ZiZV55PKz47CrXgcHU8k-rI",
+  authDomain: "justfirst-d5b27.firebaseapp.com",
+  databaseURL: "https://justfirst-d5b27-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "justfirst-d5b27",
+  storageBucket: "justfirst-d5b27.appspot.com",
+  messagingSenderId: "980198791588",
+  appId: "1:980198791588:web:9bd2e1b0eebac0c79f8931"
 };
 firebase.initializeApp(firebaseConfig);
 function sendMessage(e) {

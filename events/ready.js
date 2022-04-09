@@ -9,7 +9,7 @@ module.exports = async(client) => {
   .then(large => {
     let presence = new rpc.Rpc()
     .setName(config.name)
-    .setUrl('https://www.twitch.tv/omitgaming')
+    .setUrl('https://frownmc.xyz')
     .setType(config.type)
     .setApplicationId(config.applicationid)
     .setAssetsLargeImage(large.id)

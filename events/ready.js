@@ -12,7 +12,6 @@ module.exports = async(client) => {
     .setUrl('https://frownmc.xyz')
     .setType(config.type)
     .setApplicationId(config.applicationid)
-    .setAssetsLargeImage(large.id)
 
 .setAssetsSmallImage(small.id)   
     .setState(config.state)

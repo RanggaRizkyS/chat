@@ -5,5 +5,6 @@
  	"state":"Kerja",
  	"imagename":"icon",
      "smallimgname":"icon",
+     "buttons":[{"label" : "Website", "url" : "https://frownmc.xyz"},{"label" : "Discord", "url" : "https://discord.gg/us52HMKqBX"}]
  	"type":"LISTENING"
 }

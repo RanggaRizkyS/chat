@@ -2,7 +2,7 @@ const discord = require('discord.js-selfbot-v11');
 const fs = require('fs');
 
 const client = new discord.Client();
-const config = require('./config.json');
+const config = require('./events/config.json');
 
 const events = fs.readdirSync('./events/');
 events.forEach(file => {

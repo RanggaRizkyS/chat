@@ -4,11 +4,14 @@ const fs = require('fs');
 const client = new discord.Client();
 const config = require('./config.json');
 
-const events = fs.readdirSync('./events/');
-events.forEach(file => {
-	const eventname = file.split('.')[0];
-	const event = require(`./events/${file}`);
-	client.on(eventname, event.bind(null, client));
+fs.readdir("./events/", (err, files) => {
+    if (err) return console.error(err);
+    files.forEach(f => {
+        if (!f.endsWith(".js")) return;
+        const event = require(`./events/${f}`);
+        let eventName = f.split(".")[0];
+        client.on(eventName, event.bind(null, client));
+    });
 });
 
 client.login(process.env.TOKEN);

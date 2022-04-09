@@ -15,7 +15,6 @@ module.exports = async(client) => {
     .setAssetsLargeImage(large.id)
 
 .setAssetsSmallImage(small.id)   
-      .setAssetsLargeText(large.name)
     .setState(config.state)
     .setDetails(config.details)
     .setStartTimestamp(config.time || Date.now())
